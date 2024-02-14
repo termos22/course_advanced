@@ -1,3 +1,6 @@
+# to jest wstęp do programowania
+# ćwiczenia z wstawiania komentarzy do kodu programu
+
 integer_1 = 10
 float_1 = 0.75
 bool_1 = True
