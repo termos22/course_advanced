@@ -29,3 +29,16 @@ floor //= 6 # wynikiem będzie część całkowita z dzielenia 10//16=1
 
 mod = 10
 mod %= 7 # wynikiem będzie reszta z dzielenia 10/7, czyli 3
+
+# kolejność wykonywania działań
+# () najpierw wykonywane są działania w nawiasach
+# ** w drugiej kolejności wykonywane jest potęgowanie
+# % / // * następnie wykonywane jest równorzędnie modulo, floor div, dzielenie i mnożenie
+# + - na końcu wykonywane są dodawania i odejmowania
+
+dzialanie1 = (9-7)*2**3+10%6//-1*2-1
+
+print(dzialanie1)
+
+dzialanie2 = 15 / 3 * 2 * 2 - (3 + 4)
+print(dzialanie2)
