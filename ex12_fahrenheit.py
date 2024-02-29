@@ -1,8 +1,8 @@
-fah_temp = int(input("please input Fahrenheit temperature: "))
+celsius = int(input("please input Fahrenheit temperature: "))
 
 
-def fahrenheit(f):
-    return round(1.8 * fah_temp + 32, 1)
+def fahrenheit(cel):
+    return round(1.8 * cel + 32, 1)
 
 
-print("The Fahrenheit equivalent of " + str(fah_temp) + " degrees Celsius is " + str(fahrenheit(fah_temp)))
+print("The Fahrenheit equivalent of " + str(celsius) + " degrees Celsius is " + str(fahrenheit(celsius)))
