@@ -11,7 +11,7 @@ from random import randint    # importuje funkcję randint zmodułu random
 print(randint(10, 20))        # przykład użycia zaimportowanej funkcji
 
 
-# import uniwersalny funkcji z moduły
+# import uniwersalny wszystkich funkcji z modułu
 from random import *          # importuje wszystkie funkcje z modułu random
 
 print(random())
