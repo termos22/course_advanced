@@ -96,3 +96,4 @@ print(c)
 
 from math import *  # importing everything form math module
 
+print(pi)
