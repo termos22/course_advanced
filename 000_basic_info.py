@@ -85,7 +85,7 @@ while x<=5:
 
 # Function
 # To write a block of code that can be reused
- def add(a,b):
+def add(a,b):
     return a+b
 
 c = add(60,9)
