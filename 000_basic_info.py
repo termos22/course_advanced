@@ -32,6 +32,19 @@ print(g[2]) # drukuje 3 element z listy, numerowanie list zaczyna się od 0
 h = (1,2.45,3,"adam",5) # może składać się z elementów róznego typu
 print(h[3])
 
+# Tuple is immutable, you can't change values of tuple
+# List is mutable, values can be changed
+
+a_list = [1,2,3]
+a_tuple = (1,2,3)
+
+a_list[0] = 3
+print(a_list)
+
+a_tuple[0] = 3 # this line generates an error: TypeError: 'tuple' object does not support item assignment
+
+
+
 # Boolean
 i = True
 j = False
@@ -97,3 +110,47 @@ print(c)
 from math import *  # importing everything form math module
 
 print(pi)
+
+# Classes
+# Used to represent real world things in code
+# Like a blueprint
+
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def name(self):
+        long_name = f"Name : {self.year} {self.brand} {self.model}"
+        return long_name.title()
+    
+# Object created using Class
+# is an instance of class
+    
+my_car = Car("Audi","A4",2012)
+print(my_car.year)
+print(my_car.name())
+
+my_car2 = Car("Lexus","ES300",2019)
+print(my_car2.year)
+print(my_car2.name())
+
+# Inheritance
+#Using code of original class to create a newe one
+#Original class = Parent class
+#New class = Child Class
+
+class ElectricCar(Car):
+    def __init__(self, brand, model, year):
+        super().__init__(brand, model, year)
+        self.battery_size = 75
+
+
+    def Speak(self):
+        speech = f"I'm {self.brand} {self.model}"
+        return speech
+    
+new_car = ElectricCar("Tesla","Y",2019)
+print(new_car.Speak())
+
