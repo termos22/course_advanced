@@ -18,7 +18,7 @@ gallons = randint(10, 25)
 miles = randint(200, 400)
 
 mpg = miles // gallons
-
+print("")
 print(f"The car's fuel tank holds {gallons} gallons of gas.")
 print(f"The car can travel {miles} miles on a full tank.")
 print(f"The car's gas mileage (MPG) is {mpg}.") 
