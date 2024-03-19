@@ -23,7 +23,6 @@ print("SHOUT!".lower().isupper())
 # .isdecimal() - tylko cyfry
 # .isspace()   - tylko spacje
 # .istitle()   - tylko stringi gdzie pierwsza litera każdego wyrazu jest pisana dużą literą
-
 print("Batman".isalpha())
 print("Batman123".isalpha())
 
@@ -42,4 +41,26 @@ print("not just spaces"[3].isspace())
 print("The Empire Strikes Back".istitle())
 print("Super Smash Broters: Ultimate!".istitle())  # działa również ze znakami interpunkcyjnymi i znakami specjalnymi
 
-print("th great gatsby".title())
+print("the great gatsby".title())
+
+# .startswith() - zwraca True jeżeli string zaczyna się wyrażeniem z argumentu 
+# .endswith()   - zwraca True jeżeli string kończy się wyrażeniem z argumentu
+# obie funkcje są CASE SENSITIVE
+print("this is a string".startswith("this"))
+print("this is a string".endswith("this"))
+print("this is a string".startswith("T"))
+
+
+# .join() - łączy stringi. w pierwszym "" podajemy co ma być pomiędzy stringami
+# następnie jako argument podajemy listę stringów, lista zawsze zamknięta jest w []
+print("".join(["one", "two", "three"]))
+print(" ".join(["one", "two", "three"]))
+print(",".join(["one", "two", "three"]))
+print(", ".join(["one", "two", "three"]))
+print("...".join(["one", "two", "three"]))
+
+# .split() - rozdziela stringi, w pzeciwieństwie do metody .join
+# domyślnie metoda .split() rozdziela string po spacji
+print("Eggs, Milk, Waffles, Bacon".split())
+print("Eggs, Milk, Waffles, Bacon".split(","))
+print("Eggs, Milk, Waffles, Bacon".split(", "))
